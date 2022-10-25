@@ -1,11 +1,13 @@
 from setuptools import setup
 from searcher.version import __version__
-
+from pathlib import Path
+this_directory = Path(__file__).parent
+long_description = (this_directory / "README.md").read_text()
 
 setup(
     name='duples_searcher',
     version=__version__,
-    long_description="README.md",
+    long_description=long_description,
     long_description_content_type="text/markdown",
     description='Search information about duplicates in files',
     author='Evgeny Dmitriev',
