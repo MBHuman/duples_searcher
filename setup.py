@@ -4,14 +4,16 @@ from searcher.version import __version__
 
 setup(
     name='duples_searcher',
-    version='0.1.0',
+    version=__version__,
     description='Search information about duplicates in files',
     author='Evgeny Dmitriev',
+    author_email="zenka712@mail.ru",
     download_url='https://github.com/MBHuman/duples_searcher/archive/refs/tags/' + __version__ + '.tar.gz',
     url='https://github.com/MBHuman/duples_searcher',
     install_requires=[
         'pydantic==1.10.2'
     ],
+    license="MIT",
     packages=['searcher'],
     classifiers=[
         'Programming Language :: Python :: 3'
