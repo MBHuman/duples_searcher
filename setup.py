@@ -14,7 +14,7 @@ setup(
         'pydantic==1.10.2'
     ],
     license="MIT",
-    packages=['searcher'],
+    packages=['searcher', 'searcher.models', 'searcher.enums'],
     classifiers=[
         'Programming Language :: Python :: 3'
     ],
